@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head> 
+		
+	</head>
+	<body>
+	
+	<center><h1><b> TARROSTO GRAZIE</b></h1>
+	<button id="btn" onclick="scrivi()"><h2>Clicca qui frATM, te spiego na cosa</h2></button>
+	<p id="display" >
+	</p>
+	</center>
+	
+	<script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script><script>confetti.start()</script>
+	
+	<script>
+	let i=0;
+	let arr=[`Allora 1 <b>dio e' porco </b>e su questo non ci si scappa `,`<b>2 mi diletto a scriptare cosi' per divertimento</b>`, `<b>3 tu che cazzo fai di simpatico?</b>`,`<b>4 me so gia'  rotto della quarantena</b>`,"<b>5 quando alla prossima sbogiata assieme?</b>","<b>6 Boby quest'anno non ha ancora provato a vendermi niente</b>","<b>7 non so che scrivere</b>",`<b>8 WLF</b>`];
+	
+	function scrivi(){
+		document.getElementById('display').innerHTML=arr[i];
+		
+		if(i==arr.length-1)
+		i=-1;
+		
+	++i;
+	
+	}	
+	
+	</script>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	-->
+	</body>
+</html>

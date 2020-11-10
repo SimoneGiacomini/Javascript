@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head> 
+		
+	</head>
+	<body>
+	
+	<h1> TITOLO !</h1>
+	<button id="btn" onclick="scrivi()">Cliccami</button>
+	<p id="display" >
+	Primo paragrafino
+	</p>
+	
+	
+	<script>
+	i=0;
+	//prima maniera per visualizzare qualcosa :
+	function scrivi(){
+		 if(i%3==0)
+		   document.getElementById('display').innerHTML = i+' paragrafino';
+		
+		else if (i%2==0)
+			alert('Hello WORLD');
+		
+		else 
+		//2a maniera per visualizzare qualcosa :
+			document.getElementById('display').innerHTML = 'CIAO MONDO';
+	
+	i++;
+	
+	}	
+	//3a maniera per visualizzare qualcosa : // viene scritta in console, visibile solo in 'ISPEZIONA'
+	console.log('CIAO MONDO');
+	
+	//4a maniera per visualizzare qualcosa : //sconsigliata, solo in fase di debugging, ricarica tutta la pagina e mostra solo ciò che c'è scritto tra gli apici
+	document.write('HELLO WORLD');
+	
+	</script>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	-->
+	</body>
+</html>

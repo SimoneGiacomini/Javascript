@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head> 
+		
+	</head>
+	<body>
+	
+	<h1> TITOLO !</h1>
+	<button id="btn" onclick="scrivi()">Cliccami</button>
+	<p id="display" >
+	Primo paragrafino
+	</p>
+	<script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script><script>confetti.start()</script>
+	
+	<script>
+	//LE STRINGHE SI COMPORTANO COME ARRAY e hanno anche la proprietà della lunghezza
+	let i=0;
+	let stringa1= 'Stringa super megaiper ultra super duper <b>lungaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b>';
+	
+	let stringa2= `stringa lunga lungaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`;
+	let stringa3= `stringa E\' ciao sono apice`;
+	let stringa4= `ciao i vale:${i}`;
+	let var1= typeof i; 
+	
+	let arr=[stringa1, stringa2,stringa3,stringa4,var1,i,`<a> capo ${i}</a>`];
+	
+	function scrivi(){
+	
+	document.getElementById('display').innerHTML=arr[i];
+	
+	if(i==arr.length-1)
+		i=0;
+	++i;
+	}
+	//<script src="https://code.jquery.com/jquery-3.2.1.js">
+	
+	
+	</script>
+	
+	</body>
+</html>
